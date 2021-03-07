@@ -1,0 +1,10 @@
+---
+extends: default
+
+rules:
+  # Because I'm on Windows
+  new-lines: disable
+  line-length:
+    max: 200
+    level: warning
+  truthy: disable

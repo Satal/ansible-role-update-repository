@@ -1,0 +1,16 @@
+---
+# defaults file for ansible-role-update-repository
+
+repo_location: /repo/repos
+repo_repos:
+  - baseos
+  - appstream
+  - extras
+  - epel
+repo_hostname: 'localrepo.local'
+
+config_ssl: true
+ssl_crt_filename: repo.crt
+ssl_crt_src: files/repo.crt
+ssl_key_filename: repo.key
+ssl_key_src: files/repo.key
