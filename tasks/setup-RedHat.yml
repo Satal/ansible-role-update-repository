@@ -22,7 +22,7 @@
       copy:
         src: "{{ssl_crt_src}}"
         dest: "/etc/nginx/ssl/{{ssl_crt_filename}}"
-    y
+
     - name: Copy key file
       copy:
         src: "{{ssl_key_src}}"
