@@ -49,12 +49,6 @@
     owner: nginx
     recurse: yes
 
-- name: copy update-repo daily cron script
-  template:
-    src: RedHat-update-repo.j2
-    dest: /etc/cron.daily/update-repo
-    mode: 755
-
 - name: permissions for the repo location
   shell: "semanage fcontext -a -t httpd_sys_content_t '{{repo_location}}(/.*)?'"
   ignore_errors: yes
